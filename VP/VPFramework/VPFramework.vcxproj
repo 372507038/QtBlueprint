@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E5380424-9EF8-4112-B888-C384AC4DF44F}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>VPFRAMEWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>VPFRAMEWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtMoc Include="Editor\SCompiler\SCompiler.h" />
+    <QtMoc Include="Editor\SCompilerResults\SCompilerResults.h" />
+    <QtMoc Include="Editor\SKismetInspector\SKismetInspector.h" />
+    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorGroup.h" />
+    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprint.h" />
+    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprintGroup.h" />
+    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprintItem.h" />
+    <QtMoc Include="Editor\SSCSEditor\SSCSMdiWidget.h" />
+    <ClInclude Include="Engine\Compiler\Kismet2\BlueprintEditorUtils.h" />
+    <ClInclude Include="Editor\Common\CommEnum.h" />
+    <ClInclude Include="Editor\Common\CommStruct.h" />
+    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorItem.h" />
+    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorFuncIO.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinBool.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinClass.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinEnum.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinExec.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinInteger.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinString.h" />
+    <ClInclude Include="Editor\SSCSEditor\Pins\SNameComboBox.h" />
+    <QtMoc Include="Editor\SSCSEditor\SSCSEditor.h" />
+    <ClInclude Include="Editor\SSCSEditor\SSCSGraph.h" />
+    <ClInclude Include="Editor\SSCSEditor\SSCSNode.h" />
+    <ClInclude Include="Editor\SSCSEditor\SSCSPin.h" />
+    <QtMoc Include="Engine\Blueprint\BlueprintEditor.h" />
+    <QtMoc Include="Engine\Customize\k2Blueprint\K2BlueprintEditor.h" />
+    <ClInclude Include="Engine\Compiler\Kismet2\CompilerResultsLog.h" />
+    <ClInclude Include="Engine\Compiler\KismetCompiler\BlueprintCompiledStatement.h" />
+    <ClInclude Include="Engine\Compiler\KismetCompiler\EdGraphCompilerUtilities.h" />
+    <ClInclude Include="Engine\Compiler\KismetCompiler\KismetCompiledFunctionContext.h" />
+    <ClInclude Include="Engine\Compiler\KismetCompiler\KismetCompiler.h" />
+    <ClInclude Include="Runtime\Blueprint\Blueprint.h" />
+    <ClInclude Include="Runtime\Blueprint\BlueprintFactories.h" />
+    <ClInclude Include="Runtime\Blueprint\BlueprintGeneratedClass.h" />
+    <ClInclude Include="Runtime\Core\Archive.h" />
+    <ClInclude Include="Runtime\Core\Class.h" />
+    <ClInclude Include="Runtime\Core\EnumClassFlags.h" />
+    <ClInclude Include="Runtime\Core\Guid.h" />
+    <ClInclude Include="Runtime\Core\Interface.h" />
+    <ClInclude Include="Runtime\Core\Object.h" />
+    <ClInclude Include="Runtime\Core\ObjectMacros.h" />
+    <ClInclude Include="Runtime\Core\ObjectPool.h" />
+    <ClInclude Include="Runtime\Core\Script.h" />
+    <ClInclude Include="Runtime\Core\SubclassOf.h" />
+    <ClInclude Include="Runtime\Customize\k2Blueprint\K2Blueprint.h" />
+    <ClInclude Include="Runtime\Customize\k2Blueprint\K2BlueprintFactories.h" />
+    <ClInclude Include="Runtime\Customize\k2EdGraph\EdGraphSchema_K2.h" />
+    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node.h" />
+    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_EditablePinBase.h" />
+    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_FunctionEntry.h" />
+    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_FunctionTerminator.h" />
+    <ClInclude Include="Runtime\EdGraph\EdGraph.h" />
+    <ClInclude Include="Runtime\EdGraph\EdGraphNode.h" />
+    <ClInclude Include="Runtime\EdGraph\EdGraphPin.h" />
+    <ClInclude Include="Runtime\EdGraph\EdGraphSchema.h" />
+    <ClInclude Include="vpframework_global.h" />
+    <ClInclude Include="VPFramework.h" />
+    <ClCompile Include="Editor\SSCSEditor\SSCSMdiWidget.cpp" />
+    <ClCompile Include="Engine\Compiler\Kismet2\BlueprintEditorUtils.cpp" />
+    <ClCompile Include="Editor\Common\CommEnum.cpp" />
+    <ClCompile Include="Editor\Common\CommStruct.cpp" />
+    <ClCompile Include="Editor\SCompilerResults\SCompilerResults.cpp" />
+    <ClCompile Include="Editor\SCompiler\SCompiler.cpp" />
+    <ClCompile Include="Editor\SKismetInspector\SKismetInspector.cpp" />
+    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorFuncIO.cpp" />
+    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorGroup.cpp" />
+    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorItem.cpp" />
+    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprint.cpp" />
+    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprintGroup.cpp" />
+    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprintItem.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinBool.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinClass.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinEnum.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinExec.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinInteger.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinString.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\Pins\SNameComboBox.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\SSCSEditor.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\SSCSGraph.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\SSCSNode.cpp" />
+    <ClCompile Include="Editor\SSCSEditor\SSCSPin.cpp" />
+    <ClCompile Include="Engine\Blueprint\BlueprintEditor.cpp" />
+    <ClCompile Include="Engine\Compiler\Kismet2\CompilerResultsLog.cpp" />
+    <ClCompile Include="Engine\Compiler\KismetCompiler\EdGraphCompiler.cpp" />
+    <ClCompile Include="Engine\Compiler\KismetCompiler\KismetCompiler.cpp" />
+    <ClCompile Include="Engine\Compiler\KismetCompiler\KismetCompilerMisc.cpp" />
+    <ClCompile Include="Engine\Customize\k2Blueprint\K2BlueprintEditor.cpp" />
+    <ClCompile Include="Runtime\Blueprint\Blueprint.cpp" />
+    <ClCompile Include="Runtime\Blueprint\BlueprintFactories.cpp" />
+    <ClCompile Include="Runtime\Blueprint\BlueprintGeneratedClass.cpp" />
+    <ClCompile Include="Runtime\Core\Archive.cpp" />
+    <ClCompile Include="Runtime\Core\Class.cpp" />
+    <ClCompile Include="Runtime\Core\Guid.cpp" />
+    <ClCompile Include="Runtime\Core\Object.cpp" />
+    <ClCompile Include="Runtime\Core\ObjectPool.cpp" />
+    <ClCompile Include="Runtime\Core\Script.cpp" />
+    <ClCompile Include="Runtime\Customize\k2Blueprint\K2Blueprint.cpp" />
+    <ClCompile Include="Runtime\Customize\k2Blueprint\K2BlueprintFactories.cpp" />
+    <ClCompile Include="Runtime\Customize\k2EdGraph\EdGraphSchema_K2.cpp" />
+    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node.cpp" />
+    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_EditablePinBase.cpp" />
+    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_FunctionEntry.cpp" />
+    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_FunctionTerminator.cpp" />
+    <ClCompile Include="Runtime\EdGraph\EdGraph.cpp" />
+    <ClCompile Include="Runtime\EdGraph\EdGraphNode.cpp" />
+    <ClCompile Include="Runtime\EdGraph\EdGraphPin.cpp" />
+    <ClCompile Include="Runtime\EdGraph\EdGraphSchema.cpp" />
+    <ClCompile Include="VPFramework.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Editor\SCompilerResults\SCompilerResults.ui" />
+    <QtUic Include="Editor\SCompiler\SCompiler.ui" />
+    <QtUic Include="Editor\SKismetInspector\SKismetInspector.ui" />
+    <QtUic Include="Editor\SKismetInspector\SKismetInspectorFuncIO.ui" />
+    <QtUic Include="Editor\SKismetInspector\SKismetInspectorGroup.ui" />
+    <QtUic Include="Editor\SKismetInspector\SKismetInspectorItem.ui" />
+    <QtUic Include="Editor\SMyBlueprint\SMyBlueprint.ui" />
+    <QtUic Include="Editor\SMyBlueprint\SMyBlueprintGroup.ui" />
+    <QtUic Include="Editor\SMyBlueprint\SMyBlueprintItem.ui" />
+    <QtUic Include="Editor\SSCSEditor\SSCSEditor.ui" />
+    <QtUic Include="Editor\SSCSEditor\SSCSMdiWidget.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
