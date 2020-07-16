@@ -1,6 +1,6 @@
 #include "VPFramework.h"
-#include "Engine/Blueprint/BlueprintEditor.h"
-#include "Engine/Customize/k2Blueprint/K2BlueprintEditor.h"
+#include "Controller/Blueprint/BlueprintEditor.h"
+#include "Controller/Customize/k2Blueprint/K2BlueprintEditor.h"
 #include <QMetaType>
 
 QMainWindow* VPFramework::CreateEditor(QString fileName)

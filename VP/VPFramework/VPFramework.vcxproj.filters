@@ -31,361 +31,310 @@
     <ClCompile Include="VPFramework.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClInclude Include="Runtime\EdGraph\EdGraphSchema.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinBool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinEnum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinExec.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinInteger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SGraphPinString.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\Pins\SNameComboBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\SSCSGraph.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\SSCSNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor\SSCSEditor\SSCSPin.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Blueprint\Blueprint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Blueprint\BlueprintFactories.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\Archive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\Class.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\Guid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\Object.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\ObjectPool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Core\Script.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2Blueprint\K2Blueprint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2EdGraph\EdGraphSchema_K2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_EditablePinBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_FunctionEntry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2EdGraph\K2Node_FunctionTerminator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\EdGraph\EdGraph.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\EdGraph\EdGraphNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Runtime\EdGraph\EdGraphPin.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="VPFramework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Customize\k2Blueprint\K2BlueprintFactories.h">
+    <ClInclude Include="Model\Blueprint\Blueprint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\KismetCompiler\BlueprintCompiledStatement.h">
+    <ClInclude Include="Model\Blueprint\BlueprintFactories.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\KismetCompiler\EdGraphCompilerUtilities.h">
+    <ClInclude Include="Model\Core\Archive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\KismetCompiler\KismetCompiledFunctionContext.h">
+    <ClInclude Include="Model\Core\Class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\KismetCompiler\KismetCompiler.h">
+    <ClInclude Include="Model\Core\Guid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Blueprint\BlueprintGeneratedClass.h">
+    <ClInclude Include="Model\Core\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Editor\Common\CommEnum.h">
+    <ClInclude Include="Model\Core\ObjectPool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Editor\Common\CommStruct.h">
+    <ClInclude Include="Model\Core\Script.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\Kismet2\CompilerResultsLog.h">
+    <ClInclude Include="Model\Customize\k2Blueprint\K2Blueprint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Compiler\Kismet2\BlueprintEditorUtils.h">
+    <ClInclude Include="Model\Customize\k2Blueprint\K2BlueprintFactories.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Core\SubclassOf.h">
+    <ClInclude Include="Model\Customize\k2EdGraph\EdGraphSchema_K2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Core\Interface.h">
+    <ClInclude Include="Model\Customize\k2EdGraph\K2Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Core\ObjectMacros.h">
+    <ClInclude Include="Model\Customize\k2EdGraph\K2Node_EditablePinBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\Core\EnumClassFlags.h">
+    <ClInclude Include="Model\Customize\k2EdGraph\K2Node_FunctionEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Customize\k2EdGraph\K2Node_FunctionTerminator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\EdGraph\EdGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\EdGraph\EdGraphNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\EdGraph\EdGraphPin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\EdGraph\EdGraphSchema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\Common\CommEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\Common\CommStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinBool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinExec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SGraphPinString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\Pins\SNameComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\SSCSGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\SSCSNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="View\SSCSEditor\SSCSPin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Editor\SCompiler\SCompiler.cpp">
+    <ClCompile Include="Model\Blueprint\Blueprint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SCompilerResults\SCompilerResults.cpp">
+    <ClCompile Include="Model\Blueprint\BlueprintFactories.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SKismetInspector\SKismetInspector.cpp">
+    <ClCompile Include="Model\Core\Archive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorGroup.cpp">
+    <ClCompile Include="Model\Core\Class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprint.cpp">
+    <ClCompile Include="Model\Core\Guid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprintGroup.cpp">
+    <ClCompile Include="Model\Core\Object.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinBool.cpp">
+    <ClCompile Include="Model\Core\ObjectPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinClass.cpp">
+    <ClCompile Include="Model\Core\Script.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinEnum.cpp">
+    <ClCompile Include="Model\Customize\k2Blueprint\K2Blueprint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinExec.cpp">
+    <ClCompile Include="Model\Customize\k2Blueprint\K2BlueprintFactories.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinInteger.cpp">
+    <ClCompile Include="Model\Customize\k2EdGraph\EdGraphSchema_K2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SGraphPinString.cpp">
+    <ClCompile Include="Model\Customize\k2EdGraph\K2Node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\Pins\SNameComboBox.cpp">
+    <ClCompile Include="Model\Customize\k2EdGraph\K2Node_EditablePinBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\SSCSEditor.cpp">
+    <ClCompile Include="Model\Customize\k2EdGraph\K2Node_FunctionEntry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\SSCSGraph.cpp">
+    <ClCompile Include="Model\Customize\k2EdGraph\K2Node_FunctionTerminator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\SSCSNode.cpp">
+    <ClCompile Include="Model\EdGraph\EdGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\SSCSPin.cpp">
+    <ClCompile Include="Model\EdGraph\EdGraphNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Blueprint\BlueprintEditor.cpp">
+    <ClCompile Include="Model\EdGraph\EdGraphPin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Blueprint\Blueprint.cpp">
+    <ClCompile Include="Model\EdGraph\EdGraphSchema.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Blueprint\BlueprintFactories.cpp">
+    <ClCompile Include="Controller\Blueprint\BlueprintEditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\Archive.cpp">
+    <ClCompile Include="Controller\Customize\k2Blueprint\K2BlueprintEditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\Class.cpp">
+    <ClCompile Include="View\Common\CommEnum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\Guid.cpp">
+    <ClCompile Include="View\Common\CommStruct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\Object.cpp">
+    <ClCompile Include="View\SCompiler\SCompiler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\ObjectPool.cpp">
+    <ClCompile Include="View\SCompilerResults\SCompilerResults.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Core\Script.cpp">
+    <ClCompile Include="View\SKismetInspector\SKismetInspector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2Blueprint\K2Blueprint.cpp">
+    <ClCompile Include="View\SKismetInspector\SKismetInspectorFuncIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2EdGraph\EdGraphSchema_K2.cpp">
+    <ClCompile Include="View\SKismetInspector\SKismetInspectorGroup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node.cpp">
+    <ClCompile Include="View\SKismetInspector\SKismetInspectorItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_EditablePinBase.cpp">
+    <ClCompile Include="View\SMyBlueprint\SMyBlueprint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_FunctionEntry.cpp">
+    <ClCompile Include="View\SMyBlueprint\SMyBlueprintGroup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2EdGraph\K2Node_FunctionTerminator.cpp">
+    <ClCompile Include="View\SMyBlueprint\SMyBlueprintItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\EdGraph\EdGraph.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinBool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\EdGraph\EdGraphNode.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\EdGraph\EdGraphPin.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinEnum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\EdGraph\EdGraphSchema.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinExec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\SMyBlueprint\SMyBlueprintItem.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinInteger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Customize\k2Blueprint\K2BlueprintEditor.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SGraphPinString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Customize\k2Blueprint\K2BlueprintFactories.cpp">
+    <ClCompile Include="View\SSCSEditor\Pins\SNameComboBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Compiler\KismetCompiler\EdGraphCompiler.cpp">
+    <ClCompile Include="View\SSCSEditor\SSCSEditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Compiler\KismetCompiler\KismetCompiler.cpp">
+    <ClCompile Include="View\SSCSEditor\SSCSGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Compiler\KismetCompiler\KismetCompilerMisc.cpp">
+    <ClCompile Include="View\SSCSEditor\SSCSMdiWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Runtime\Blueprint\BlueprintGeneratedClass.cpp">
+    <ClCompile Include="View\SSCSEditor\SSCSNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Editor\Common\CommEnum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Editor\Common\CommStruct.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorItem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Editor\SKismetInspector\SKismetInspectorFuncIO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Compiler\Kismet2\CompilerResultsLog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Compiler\Kismet2\BlueprintEditorUtils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Editor\SSCSEditor\SSCSMdiWidget.cpp">
+    <ClCompile Include="View\SSCSEditor\SSCSPin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Editor\SCompiler\SCompiler.h">
+    <QtMoc Include="Controller\Blueprint\BlueprintEditor.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SCompilerResults\SCompilerResults.h">
+    <QtMoc Include="Controller\Customize\k2Blueprint\K2BlueprintEditor.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SKismetInspector\SKismetInspector.h">
+    <QtMoc Include="View\SCompiler\SCompiler.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorGroup.h">
+    <QtMoc Include="View\SCompilerResults\SCompilerResults.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprint.h">
+    <QtMoc Include="View\SKismetInspector\SKismetInspector.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprintGroup.h">
+    <QtMoc Include="View\SKismetInspector\SKismetInspectorFuncIO.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SSCSEditor\SSCSEditor.h">
+    <QtMoc Include="View\SKismetInspector\SKismetInspectorGroup.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Engine\Blueprint\BlueprintEditor.h">
+    <QtMoc Include="View\SKismetInspector\SKismetInspectorItem.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SMyBlueprint\SMyBlueprintItem.h">
+    <QtMoc Include="View\SMyBlueprint\SMyBlueprint.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Engine\Customize\k2Blueprint\K2BlueprintEditor.h">
+    <QtMoc Include="View\SMyBlueprint\SMyBlueprintGroup.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorItem.h">
+    <QtMoc Include="View\SMyBlueprint\SMyBlueprintItem.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SKismetInspector\SKismetInspectorFuncIO.h">
+    <QtMoc Include="View\SSCSEditor\SSCSEditor.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Editor\SSCSEditor\SSCSMdiWidget.h">
+    <QtMoc Include="View\SSCSEditor\SSCSMdiWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="Editor\SCompilerResults\SCompilerResults.ui">
+    <QtUic Include="View\SCompiler\SCompiler.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SKismetInspector\SKismetInspector.ui">
+    <QtUic Include="View\SCompilerResults\SCompilerResults.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SKismetInspector\SKismetInspectorGroup.ui">
+    <QtUic Include="View\SKismetInspector\SKismetInspector.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SMyBlueprint\SMyBlueprint.ui">
+    <QtUic Include="View\SKismetInspector\SKismetInspectorFuncIO.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SMyBlueprint\SMyBlueprintGroup.ui">
+    <QtUic Include="View\SKismetInspector\SKismetInspectorGroup.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SSCSEditor\SSCSEditor.ui">
+    <QtUic Include="View\SKismetInspector\SKismetInspectorItem.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SCompiler\SCompiler.ui">
+    <QtUic Include="View\SMyBlueprint\SMyBlueprint.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SMyBlueprint\SMyBlueprintItem.ui">
+    <QtUic Include="View\SMyBlueprint\SMyBlueprintGroup.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SKismetInspector\SKismetInspectorItem.ui">
+    <QtUic Include="View\SMyBlueprint\SMyBlueprintItem.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SKismetInspector\SKismetInspectorFuncIO.ui">
+    <QtUic Include="View\SSCSEditor\SSCSEditor.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Editor\SSCSEditor\SSCSMdiWidget.ui">
+    <QtUic Include="View\SSCSEditor\SSCSMdiWidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
